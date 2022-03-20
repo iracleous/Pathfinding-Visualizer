@@ -1,3 +1,5 @@
+package gr.qued.ai;
+
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Cursor;
@@ -16,8 +18,8 @@ public class GridPanel extends JPanel implements MouseListener, MouseMotionListe
 	private static final long serialVersionUID = 3728396685715564240L;
 	private Grid grid;
 
-	private int height;
-	private int width;
+	private final int height;
+	private final int width;
 
 	Node current = null;
 

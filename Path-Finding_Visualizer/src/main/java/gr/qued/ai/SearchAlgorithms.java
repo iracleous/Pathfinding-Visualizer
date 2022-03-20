@@ -1,3 +1,5 @@
+package gr.qued.ai;
+
 import java.awt.Cursor;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -7,8 +9,8 @@ import javax.swing.JPanel;
 
 public class SearchAlgorithms extends Thread {
 
-	private Grid grid;
-	private JPanel panel;
+	private final Grid grid;
+	private final JPanel panel;
 	private boolean solutionFound = false;
 
 	public SearchAlgorithms(Grid grid, JPanel panel) {
@@ -124,7 +126,6 @@ public class SearchAlgorithms extends Thread {
 			extractSolution(node);
 			MyUtils.solving = false;
 			solutionFound = true;
-			return;
 		} else {
 			node.setType(Type.VISITED);
 			LinkedList<Node> children = node.getNeighbors(grid);
@@ -148,7 +149,7 @@ public class SearchAlgorithms extends Thread {
 	}
 
 	private void bfs(Node startingNode) {
-		Queue<Node> frontier = new LinkedList<Node>();
+		Queue<Node> frontier = new LinkedList<>();
 		Node currentNode = null;
 		frontier.add(startingNode);
 
@@ -164,7 +165,6 @@ public class SearchAlgorithms extends Thread {
 				extractSolution(currentNode);
 				MyUtils.solving = false;
 				solutionFound = true;
-				continue;
 			} else {
 				currentNode.setType(Type.VISITED);
 				for (Node neighbor : currentNode.getNeighbors(grid)) {

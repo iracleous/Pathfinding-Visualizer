@@ -1,3 +1,5 @@
+package gr.qued.ai;
+
 import java.awt.BorderLayout;
 import java.awt.Dimension;
 
@@ -8,8 +10,6 @@ public class WindowFrame extends JFrame {
 
 	private static final long serialVersionUID = -4280772482528512323L;
 
-	private JPanel container;
-
 	public static final int WIDTH = 800;
 	public static final int HEIGHT = 600;
 
@@ -17,7 +17,7 @@ public class WindowFrame extends JFrame {
 	public static int cols = (int) Math.floor(HEIGHT / Node.size);
 
 	public WindowFrame() {
-
+		JPanel container;
 		Grid grid = new Grid(rows, cols);
 
 		container = new JPanel();

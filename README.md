@@ -1,4 +1,9 @@
 # Path-Finding-Visualizer
+The project was forked from https://github.com/Leonardpepa/Pathfinding-Visualizer
+This fork is modified to be tun under IntelliJ, Java 17 and Maven.
+The source code is identical to the original.
+
+
 
 # Purpose
 This is a tool to visualize search algorithms
@@ -15,7 +20,7 @@ This is a tool to visualize search algorithms
 * Place a wall
 * Erase a wall
 * Allow Diagonial moves
-* Adjust Grid size
+* Adjust gr.qued.ai.Grid size
 * Adjust Delay
 * Choose Algorithm
 * Generate random maze
@@ -58,5 +63,5 @@ cd Path-Finding-Visualizer
 
 # Execution
 * 1st way: Run the Path Finding Visualizer.jar
-* 2nd way: Run from source code via Main.java 
+* 2nd way: Run from source code via gr.qued.ai.Main.java 
 

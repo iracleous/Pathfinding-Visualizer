@@ -1,3 +1,4 @@
+package gr.qued.ai;
 
 public class MyUtils {
 	public static int delay = 30;

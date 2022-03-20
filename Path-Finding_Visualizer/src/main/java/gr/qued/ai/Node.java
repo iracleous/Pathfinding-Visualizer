@@ -1,3 +1,5 @@
+package gr.qued.ai;
+
 import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -32,7 +34,7 @@ public class Node implements Comparable<Node> {
 
 	public LinkedList<Node> getNeighbors(Grid grid) {
 
-		LinkedList<Node> neighbors = new LinkedList<Node>();
+		LinkedList<Node> neighbors = new LinkedList<>();
 
 		if (this.x + 1 < grid.getRows() && x >= 0) {
 			Node node = grid.getNode(this.x + 1, this.y);

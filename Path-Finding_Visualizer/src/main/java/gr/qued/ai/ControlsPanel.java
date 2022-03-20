@@ -1,3 +1,5 @@
+package gr.qued.ai;
+
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -269,12 +271,12 @@ public class ControlsPanel extends JPanel implements ActionListener {
 		help.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(null, "Move Starting Node: drag the starting node with left click pressed"
+				JOptionPane.showMessageDialog(null, "Move Starting gr.qued.ai.Node: drag the starting node with left click pressed"
 						+ System.lineSeparator() + System.lineSeparator()
-						+ "Move Target Node: drag the target node with left click pressed" + System.lineSeparator()
-						+ System.lineSeparator() + "Place Wall Node: press or drag empty cells with left click"
+						+ "Move Target gr.qued.ai.Node: drag the target node with left click pressed" + System.lineSeparator()
+						+ System.lineSeparator() + "Place Wall gr.qued.ai.Node: press or drag empty cells with left click"
 						+ System.lineSeparator() + System.lineSeparator()
-						+ "Erase Wall Node: press or drag wall cells with right click" + System.lineSeparator()
+						+ "Erase Wall gr.qued.ai.Node: press or drag wall cells with right click" + System.lineSeparator()
 						+ System.lineSeparator() + "Pause/resume: press space to pause or resume the proccess",
 						"Instructions", JOptionPane.INFORMATION_MESSAGE);
 			}
