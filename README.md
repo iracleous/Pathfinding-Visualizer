@@ -1,6 +1,6 @@
 # Path-Finding-Visualizer
 The project was forked from https://github.com/Leonardpepa/Pathfinding-Visualizer
-This fork is modified to be tun under IntelliJ, Java 17 and Maven.
+This fork is modified to run under IntelliJ, Java 17 and Maven.
 The source code is identical to the original.
 
 
